@@ -13,6 +13,6 @@ https://discord.com/developers/applications
 から生成出来ます。
 ## モジュールのインストール
 ```
-npm i --save discord.js @discordjs/voice @discordjs/opus discordjs-allintents-v14 request
+npm i --save discord.js @discordjs/voice @discordjs/opus discordjs-allintents-v14 request async
 ```
 wgetのインストールも必須になります。
