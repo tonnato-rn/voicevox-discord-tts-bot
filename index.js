@@ -45,7 +45,7 @@ client.on("ready", async function () {
                 })
             })
             const guildvoicedata = new keyv({ uri: "sqlite://voicedata", table: d.guildid })
-            await queue.push({ id: `${d.guildid}_join`, content: "接続しました。", voice: null })
+            await queue.push({ id: `${d.guildid}_join`, content: "ぼっとが再起動されたため再接続しました。", voice: null })
             client.on("voiceStateUpdate", async function (Old, New) {
                 if (d.channelid == Old.channelId | d.channelid == New.channelId) {
                     if (connection.state.status=="destroyed") return
