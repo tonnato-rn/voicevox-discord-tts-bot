@@ -15,8 +15,7 @@ process.on("SIGINT", async function (signal) {
     })
     await fs.writeFileSync("./lastconnections.json", await JSON.stringify(arr), { encoding: "utf-8" })
     await voice.getVoiceConnections().forEach(data => data.destroy())
-    const { exec } = require("child_process")
-    exec(`kill ${process.pid}`, async function() {})
+    process.exit()
 })
 
 client.on("ready", async function () {
