@@ -1,4 +1,8 @@
 # voicevox-discord-tts-bot
+
+
+# 実行について
+このbotの実行環境はUbuntuを推奨します。
 ## このBotについて
 このBotはVOICEVOXの非公式Web APIを使用させていただいております。
 ## API Keyについて
